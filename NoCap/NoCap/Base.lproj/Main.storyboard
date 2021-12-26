@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="NoCap" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background_2" translatesAutoresizingMaskIntoConstraints="NO" id="Q2i-Wz-LHg">
+                                <rect key="frame" x="1" y="0.0" width="413" height="896"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Stop Your Friend From Caping" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yVV-oi-Mqy">
+                                <rect key="frame" x="14" y="192" width="386" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tfU-7p-J8W">
+                                <rect key="frame" x="1" y="421" width="413" height="441"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qef-3h-EgC">
+                                        <rect key="frame" x="114" y="126" width="184" height="163"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="stop_the_cap"/>
+                                        <connections>
+                                            <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2x3-Fx-SZZ"/>
+                                        </connections>
+                                    </button>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cap" translatesAutoresizingMaskIntoConstraints="NO" id="Gxx-Cg-fYu">
+                                        <rect key="frame" x="0.0" y="0.0" width="413" height="415"/>
+                                        <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="Qef-3h-EgC" firstAttribute="top" secondItem="tfU-7p-J8W" secondAttribute="top" constant="126" id="1mx-m1-lgb"/>
+                                    <constraint firstAttribute="trailing" secondItem="Gxx-Cg-fYu" secondAttribute="trailing" id="AS2-wd-qM3"/>
+                                    <constraint firstItem="Gxx-Cg-fYu" firstAttribute="top" secondItem="tfU-7p-J8W" secondAttribute="top" id="IPY-TU-eh8"/>
+                                    <constraint firstAttribute="bottom" secondItem="Gxx-Cg-fYu" secondAttribute="bottom" constant="26" id="cZa-8I-wvG"/>
+                                    <constraint firstAttribute="bottom" secondItem="Qef-3h-EgC" secondAttribute="bottom" constant="152" id="euj-cq-wRF"/>
+                                    <constraint firstItem="Gxx-Cg-fYu" firstAttribute="leading" secondItem="tfU-7p-J8W" secondAttribute="leading" id="uj2-eE-9wU"/>
+                                    <constraint firstItem="Qef-3h-EgC" firstAttribute="leading" secondItem="tfU-7p-J8W" secondAttribute="leading" constant="114" id="vCB-Gt-1qa"/>
+                                    <constraint firstAttribute="trailing" secondItem="Qef-3h-EgC" secondAttribute="trailing" constant="115" id="w03-8L-TON"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="tfU-7p-J8W" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="1" id="QSt-rD-JvL"/>
+                            <constraint firstItem="tfU-7p-J8W" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="R9s-h1-s7F"/>
+                            <constraint firstItem="tfU-7p-J8W" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="dqY-CT-KQs"/>
+                            <constraint firstItem="tfU-7p-J8W" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="421" id="sDS-EE-l7V"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="28.985507246376812" y="67.633928571428569"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="background_2" width="213" height="378.5"/>
+        <image name="cap" width="85" height="85"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
